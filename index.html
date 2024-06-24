@@ -7,6 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+
+        function pulaLinha() {
+    
+            document.write("<br>");
+        }
+    
+        function mostra(frase) {
+    
+            document.write(frase);
+            pulaLinha();
+        }
+    
+        function nome(idade1, idade2){
+            if(idade1 > idade2){
+                mostra( nome1 + " é o mais velho");
+            }
+    
+            if(idade1 < idade2){
+                mostra( nome2 + " é o mais velho");
+            } 
+    
+        }    
+        var nome1 = (prompt("Qual seu nome?"));
+        var nome2 = (prompt("Qual o nome do seu par?"));
+    
+        var idade1 = parseInt (prompt("Qual sua idade?"));
+        var idade2 = parseInt (prompt("Qual a idade do seu par?"))
+    
+        </script>
+        
     <div class=container>
         <nav>
         <ul>

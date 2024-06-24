@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Pereira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+
+        function pulaLinha() {
+    
+            document.write("<br>");
+        }
+    
+        function mostra(frase) {
+    
+            document.write(frase);
+            pulaLinha();
+        }
+    
+        function nome(idade1, idade2){
+            if(idade1 > idade2){
+                mostra( nome1 + " é o mais velho");
+            }
+    
+            if(idade1 < idade2){
+                mostra( nome2 + " é o mais velho");
+            } 
+    
+        }    
+        var nome1 = (prompt("Qual seu nome?"));
+        var nome2 = (prompt("Qual o nome do seu par?"));
+    
+        var idade1 = parseInt (prompt("Qual sua idade?"));
+        var idade2 = parseInt (prompt("Qual a idade do seu par?"))
+    
+        </script>
+
+    <div class=container>
+        <nav>
+        <ul>
+            <li>
+                <a href="index.html">Sobre o jogo</a>
+            </li>
+            <li>
+                <a href="inform.html">Mais informações</a>
+            </li>
+            <li>
+                <a href="credits.html">Créditos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="center">
+            <img src="./img/cs.jpeg"></img>
+        </div>
+    </header>
+
+    <main>
+        <div class="center2">
+        <form>
+           <label for="nomesobrenome"> Nome e sobrenome: </label>
+           <input type="text" id="nomesobrenome" class="input-padrao" required>
+ 
+           <label for="email">Email: </label>
+           <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+ 
+           <label for="telefone">Telefone: </label>
+           <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) X XXXX-XXXX">
+ 
+           <label for="mensagem">Mensagem: </label>
+           <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+ 
+          <input type="submit" value="Enviar formulário" class="enviar">
+        </div>
+        </form>
+
+    <footer>
+        <a href="https://github.com/ImTizy" target="_blank" rel="noopener noreferrer">
+            <img src="./img/github.svg"></img>
+            <p>GitHub</p>
+        <a href="https://instagram.com/davi_shira_" target="_blank" rel="noopener noreferrer">
+            <img src="./img/instagram.svg"></img>
+                <p>Instagram</p>
+        <a href="https://youtube.com/@tizygamestm" target="_blank" rel="noopener noreferrer">
+            <img src="./img/youtube.svg"></img>
+                <p>YouTube</p>
+                
+        </a>
+    </footer>
+    </div>
+    
+</body>
+</html>
